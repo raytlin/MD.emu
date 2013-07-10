@@ -100,8 +100,11 @@
 		69E558A4150645E5001407C0 /* padButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A2150645E5001407C0 /* padButton.png */; };
 		69E558A5150645E5001407C0 /* xButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A3150645E5001407C0 /* xButton.png */; };
 		69E558A715064624001407C0 /* Vera.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A615064624001407C0 /* Vera.ttf */; };
-		69E558AA1506468D001407C0 /* overlays64.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A81506468D001407C0 /* overlays64.png */; };
 		69E558AB1506468D001407C0 /* overlays128.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A91506468D001407C0 /* overlays128.png */; };
+		8465BE0A178D0DCC00EBD918 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */; };
+		8465BE0C178D1E9B00EBD918 /* overlays64.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE0B178D1E9B00EBD918 /* overlays64.png */; };
+		8465BE14178D20CE00EBD918 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE13178D20CE00EBD918 /* icon.png */; };
+		8465BE16178D211700EBD918 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE15178D211700EBD918 /* icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -434,8 +437,11 @@
 		69E558A2150645E5001407C0 /* padButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = padButton.png; path = EmuFramework/res/ui/padButton.png; sourceTree = "<group>"; };
 		69E558A3150645E5001407C0 /* xButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xButton.png; path = EmuFramework/res/ui/xButton.png; sourceTree = "<group>"; };
 		69E558A615064624001407C0 /* Vera.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vera.ttf; sourceTree = "<group>"; };
-		69E558A81506468D001407C0 /* overlays64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlays64.png; path = "EmuFramework/res/overlays/NES-style/overlays64.png"; sourceTree = "<group>"; };
 		69E558A91506468D001407C0 /* overlays128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlays128.png; path = "EmuFramework/res/overlays/NES-style/overlays128.png"; sourceTree = "<group>"; };
+		8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		8465BE0B178D1E9B00EBD918 /* overlays64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlays64.png; path = MD.emu/res/overlays/overlays64.png; sourceTree = "<group>"; };
+		8465BE13178D20CE00EBD918 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		8465BE15178D211700EBD918 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -466,6 +472,9 @@
 		69CFDD4D1506039500F0C0AE = {
 			isa = PBXGroup;
 			children = (
+				8465BE15178D211700EBD918 /* icon@2x.png */,
+				8465BE13178D20CE00EBD918 /* icon.png */,
+				8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */,
 				69E5584115061D51001407C0 /* EmuFramework */,
 				69CFDD5B1506039500F0C0AE /* Frameworks */,
 				69CFDD73150603F600F0C0AE /* Imagine */,
@@ -1404,11 +1413,11 @@
 		69E558A1150645C7001407C0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				69E558A81506468D001407C0 /* overlays64.png */,
 				69E558A91506468D001407C0 /* overlays128.png */,
 				69E558A2150645E5001407C0 /* padButton.png */,
 				69E558A615064624001407C0 /* Vera.ttf */,
 				69E558A3150645E5001407C0 /* xButton.png */,
+				8465BE0B178D1E9B00EBD918 /* overlays64.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1468,8 +1477,11 @@
 				69E558A4150645E5001407C0 /* padButton.png in Resources */,
 				69E558A5150645E5001407C0 /* xButton.png in Resources */,
 				69E558A715064624001407C0 /* Vera.ttf in Resources */,
-				69E558AA1506468D001407C0 /* overlays64.png in Resources */,
 				69E558AB1506468D001407C0 /* overlays128.png in Resources */,
+				8465BE0A178D0DCC00EBD918 /* Default-568h@2x.png in Resources */,
+				8465BE0C178D1E9B00EBD918 /* overlays64.png in Resources */,
+				8465BE14178D20CE00EBD918 /* icon.png in Resources */,
+				8465BE16178D211700EBD918 /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1567,7 +1579,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1591,6 +1604,7 @@
 				OTHER_CFLAGS = "-DSysDDec=float";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALID_ARCHS = armv7;
 			};
 			name = Debug;
 		};
@@ -1600,7 +1614,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = armv7;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -1621,20 +1636,25 @@
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = armv7;
 			};
 			name = Release;
 		};
 		69CFDD711506039500F0C0AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MD/MD-Prefix.pch";
 				INFOPLIST_FILE = "MD/MD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/imagine/bundle/darwin-iOS/armv7/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1642,14 +1662,17 @@
 		69CFDD721506039500F0C0AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MD/MD-Prefix.pch";
 				INFOPLIST_FILE = "MD/MD-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/imagine/bundle/darwin-iOS/armv7/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
