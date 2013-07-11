@@ -99,13 +99,13 @@
 		8465BE0C178D1E9B00EBD918 /* overlays64.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE0B178D1E9B00EBD918 /* overlays64.png */; };
 		8465BE14178D20CE00EBD918 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE13178D20CE00EBD918 /* icon.png */; };
 		8465BE16178D211700EBD918 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE15178D211700EBD918 /* icon@2x.png */; };
-		84929DB0178E99DB0099E459 /* ioapi.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAA178E99DB0099E459 /* ioapi.o */; };
-		84929DB1178E99DB0099E459 /* libBTstack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAB178E99DB0099E459 /* libBTstack.a */; };
-		84929DB2178E99DB0099E459 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAC178E99DB0099E459 /* libfreetype.a */; };
-		84929DB3178E99DB0099E459 /* libpng15.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAD178E99DB0099E459 /* libpng15.a */; };
-		84929DB4178E99DB0099E459 /* unzip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAE178E99DB0099E459 /* unzip.o */; };
-		84929DB5178E99DB0099E459 /* zip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAF178E99DB0099E459 /* zip.o */; };
-		84929DBD178E9C430099E459 /* ioapi.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DB7178E9C430099E459 /* ioapi.o */; };
+		84929DB0178E99DB0099E459 /* ioapi.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAA178E99DB0099E459 /* ioapi.o */; settings = {ATTRIBUTES = (Required, ); }; };
+		84929DB1178E99DB0099E459 /* libBTstack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAB178E99DB0099E459 /* libBTstack.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		84929DB2178E99DB0099E459 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAC178E99DB0099E459 /* libfreetype.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		84929DB3178E99DB0099E459 /* libpng15.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAD178E99DB0099E459 /* libpng15.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		84929DB4178E99DB0099E459 /* unzip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAE178E99DB0099E459 /* unzip.o */; settings = {ATTRIBUTES = (Required, ); }; };
+		84929DB5178E99DB0099E459 /* zip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAF178E99DB0099E459 /* zip.o */; settings = {ATTRIBUTES = (Required, ); }; };
+		84929DBD178E9C430099E459 /* ioapi.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DB7178E9C430099E459 /* ioapi.o */; settings = {ATTRIBUTES = (Required, ); }; };
 		84929DBE178E9C430099E459 /* libBTstack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DB8178E9C430099E459 /* libBTstack.a */; };
 		84929DBF178E9C430099E459 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DB9178E9C430099E459 /* libfreetype.a */; };
 		84929DC0178E9C430099E459 /* libpng15.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DBA178E9C430099E459 /* libpng15.a */; };
@@ -1646,6 +1646,7 @@
 					"imagine/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DSysDDec=float";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1682,6 +1683,7 @@
 					"imagine/**",
 				);
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-DSysDDec=float";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1704,6 +1706,7 @@
 					"\"$(SRCROOT)/imagine/bundle/darwin-iOS/armv7/lib\"",
 					"\"$(SRCROOT)imagine/bundle/darwin-iOS/armv7s/lib\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
@@ -1723,6 +1726,7 @@
 					"\"$(SRCROOT)/imagine/bundle/darwin-iOS/armv7/lib\"",
 					"\"$(SRCROOT)imagine/bundle/darwin-iOS/armv7s/lib\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
 				WRAPPER_EXTENSION = app;
