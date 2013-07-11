@@ -1102,10 +1102,10 @@ namespace Bluetooth
 
 	bool startBT(BTConnectionEventFunc connectFunc)
 	{
-		/*if(btOpened /*bluetoothState != HCI_STATE_OFF*//*)// && bluetoothState != HCI_STATE_SLEEPING)
-		{
-			closeBT();
-		}*/
+		//*if(btOpened /*bluetoothState != HCI_STATE_OFF*//*)// && bluetoothState != HCI_STATE_SLEEPING)
+		//{
+		//	closeBT();
+		//}*/
 		assert(btOpened);
 		btConnectedEvent = connectFunc;
 		if(isInScan)
