@@ -9,7 +9,7 @@ uint isROMExtension(const char *name);
     Load a normal file, or ZIP/GZ archive.
     Returns NULL if an error occured.
 */
-EVISIBLE uint8 *load_archive(char *filename, int *file_size)
+uint8 *load_archive(char *filename, int *file_size)
 {
     int size = 0;
     uint8 *buf = NULL;
@@ -120,7 +120,7 @@ EVISIBLE uint8 *load_archive(char *filename, int *file_size)
         buf = (uint8*)malloc(size);
         if(!buf)
         {
-            gd->close();
+            delete gd;
             return (0);
         }
 
@@ -128,7 +128,7 @@ EVISIBLE uint8 *load_archive(char *filename, int *file_size)
         gd->read(buf, size);
 
         /* Close file */
-        gd->close();
+        delete gd;
 
         /* Update file size and return pointer to file data */
         *file_size = size;
