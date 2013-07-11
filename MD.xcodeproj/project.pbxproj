@@ -38,11 +38,6 @@
 		69CFDF3F15060B3A00F0C0AE /* ResourceFace.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69CFDE6A150604AC00F0C0AE /* ResourceFace.cc */; settings = {COMPILER_FLAGS = "-DIMAGINE_SRC"; }; };
 		69CFDF4015060B3A00F0C0AE /* ResourceFontFreetype.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69CFDE72150604AC00F0C0AE /* ResourceFontFreetype.cc */; settings = {COMPILER_FLAGS = "-DIMAGINE_SRC"; }; };
 		69CFDF4115060B3A00F0C0AE /* ResourceImagePng.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69CFDE7E150604AC00F0C0AE /* ResourceImagePng.cc */; settings = {COMPILER_FLAGS = "-DIMAGINE_SRC"; }; };
-		69CFDF4915060C5C00F0C0AE /* ioapi.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CFDF4415060C5C00F0C0AE /* ioapi.o */; };
-		69CFDF4A15060C5C00F0C0AE /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CFDF4515060C5C00F0C0AE /* libfreetype.a */; };
-		69CFDF4B15060C5C00F0C0AE /* libpng15.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CFDF4615060C5C00F0C0AE /* libpng15.a */; };
-		69CFDF4C15060C5C00F0C0AE /* unzip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CFDF4715060C5C00F0C0AE /* unzip.o */; };
-		69CFDF4D15060C5C00F0C0AE /* zip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 69CFDF4815060C5C00F0C0AE /* zip.o */; };
 		69CFDFC415060F8300F0C0AE /* fileio.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69CFDF4F15060F8200F0C0AE /* fileio.cc */; };
 		69CFDFC515060F8300F0C0AE /* areplay.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69CFDF5415060F8200F0C0AE /* areplay.cc */; };
 		69CFDFC615060F8300F0C0AE /* eeprom.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69CFDF5615060F8200F0C0AE /* eeprom.cc */; };
@@ -93,7 +88,6 @@
 		69E5585115061D6D001407C0 /* Recent.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69E5584815061D6D001407C0 /* Recent.cc */; };
 		69E5585215061D6D001407C0 /* Screenshot.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69E5584915061D6D001407C0 /* Screenshot.cc */; };
 		69E5585315061D6D001407C0 /* VController.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69E5584A15061D6D001407C0 /* VController.cc */; };
-		69E5585515061EA6001407C0 /* libBTstack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E5585415061EA6001407C0 /* libBTstack.a */; };
 		69E5585D15061F32001407C0 /* btstack.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69E5585B15061F32001407C0 /* btstack.cc */; settings = {COMPILER_FLAGS = "-DIMAGINE_SRC"; }; };
 		69E5585E15061F32001407C0 /* build.mk in Resources */ = {isa = PBXBuildFile; fileRef = 69E5585C15061F32001407C0 /* build.mk */; };
 		69E5586115061F5B001407C0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E5586015061F5B001407C0 /* libz.dylib */; };
@@ -105,6 +99,18 @@
 		8465BE0C178D1E9B00EBD918 /* overlays64.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE0B178D1E9B00EBD918 /* overlays64.png */; };
 		8465BE14178D20CE00EBD918 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE13178D20CE00EBD918 /* icon.png */; };
 		8465BE16178D211700EBD918 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE15178D211700EBD918 /* icon@2x.png */; };
+		84929DB0178E99DB0099E459 /* ioapi.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAA178E99DB0099E459 /* ioapi.o */; };
+		84929DB1178E99DB0099E459 /* libBTstack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAB178E99DB0099E459 /* libBTstack.a */; };
+		84929DB2178E99DB0099E459 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAC178E99DB0099E459 /* libfreetype.a */; };
+		84929DB3178E99DB0099E459 /* libpng15.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAD178E99DB0099E459 /* libpng15.a */; };
+		84929DB4178E99DB0099E459 /* unzip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAE178E99DB0099E459 /* unzip.o */; };
+		84929DB5178E99DB0099E459 /* zip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAF178E99DB0099E459 /* zip.o */; };
+		84929DBD178E9C430099E459 /* ioapi.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DB7178E9C430099E459 /* ioapi.o */; };
+		84929DBE178E9C430099E459 /* libBTstack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DB8178E9C430099E459 /* libBTstack.a */; };
+		84929DBF178E9C430099E459 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DB9178E9C430099E459 /* libfreetype.a */; };
+		84929DC0178E9C430099E459 /* libpng15.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DBA178E9C430099E459 /* libpng15.a */; };
+		84929DC1178E9C430099E459 /* unzip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DBB178E9C430099E459 /* unzip.o */; };
+		84929DC2178E9C430099E459 /* zip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DBC178E9C430099E459 /* zip.o */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -309,11 +315,6 @@
 		69CFDF33150608C800F0C0AE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		69CFDF351506096600F0C0AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		69CFDF371506097E00F0C0AE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		69CFDF4415060C5C00F0C0AE /* ioapi.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = ioapi.o; path = "imagine/bundle/darwin-iOS/armv7/lib/ioapi.o"; sourceTree = "<group>"; };
-		69CFDF4515060C5C00F0C0AE /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = "imagine/bundle/darwin-iOS/armv7/lib/libfreetype.a"; sourceTree = "<group>"; };
-		69CFDF4615060C5C00F0C0AE /* libpng15.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng15.a; path = "imagine/bundle/darwin-iOS/armv7/lib/libpng15.a"; sourceTree = "<group>"; };
-		69CFDF4715060C5C00F0C0AE /* unzip.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = unzip.o; path = "imagine/bundle/darwin-iOS/armv7/lib/unzip.o"; sourceTree = "<group>"; };
-		69CFDF4815060C5C00F0C0AE /* zip.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = zip.o; path = "imagine/bundle/darwin-iOS/armv7/lib/zip.o"; sourceTree = "<group>"; };
 		69CFDF4F15060F8200F0C0AE /* fileio.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = fileio.cc; sourceTree = "<group>"; };
 		69CFDF5015060F8200F0C0AE /* fileio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileio.h; sourceTree = "<group>"; };
 		69CFDF5115060F8200F0C0AE /* genplus-config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "genplus-config.h"; path = "MD.emu/src/genplus-config.h"; sourceTree = SOURCE_ROOT; };
@@ -430,7 +431,6 @@
 		69E5584815061D6D001407C0 /* Recent.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Recent.cc; path = EmuFramework/src/Recent.cc; sourceTree = SOURCE_ROOT; };
 		69E5584915061D6D001407C0 /* Screenshot.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Screenshot.cc; path = EmuFramework/src/Screenshot.cc; sourceTree = SOURCE_ROOT; };
 		69E5584A15061D6D001407C0 /* VController.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VController.cc; path = EmuFramework/src/VController.cc; sourceTree = SOURCE_ROOT; };
-		69E5585415061EA6001407C0 /* libBTstack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBTstack.a; path = "imagine/bundle/darwin-iOS/armv7/lib/libBTstack.a"; sourceTree = "<group>"; };
 		69E5585B15061F32001407C0 /* btstack.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = btstack.cc; sourceTree = "<group>"; };
 		69E5585C15061F32001407C0 /* build.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = build.mk; sourceTree = "<group>"; };
 		69E5586015061F5B001407C0 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
@@ -442,6 +442,18 @@
 		8465BE0B178D1E9B00EBD918 /* overlays64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlays64.png; path = MD.emu/res/overlays/overlays64.png; sourceTree = "<group>"; };
 		8465BE13178D20CE00EBD918 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8465BE15178D211700EBD918 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		84929DAA178E99DB0099E459 /* ioapi.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = ioapi.o; path = "imagine/bundle/darwin-iOS/armv7s/lib/ioapi.o"; sourceTree = "<group>"; };
+		84929DAB178E99DB0099E459 /* libBTstack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBTstack.a; path = "imagine/bundle/darwin-iOS/armv7s/lib/libBTstack.a"; sourceTree = "<group>"; };
+		84929DAC178E99DB0099E459 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = "imagine/bundle/darwin-iOS/armv7s/lib/libfreetype.a"; sourceTree = "<group>"; };
+		84929DAD178E99DB0099E459 /* libpng15.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng15.a; path = "imagine/bundle/darwin-iOS/armv7s/lib/libpng15.a"; sourceTree = "<group>"; };
+		84929DAE178E99DB0099E459 /* unzip.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = unzip.o; path = "imagine/bundle/darwin-iOS/armv7s/lib/unzip.o"; sourceTree = "<group>"; };
+		84929DAF178E99DB0099E459 /* zip.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = zip.o; path = "imagine/bundle/darwin-iOS/armv7s/lib/zip.o"; sourceTree = "<group>"; };
+		84929DB7178E9C430099E459 /* ioapi.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = ioapi.o; path = "imagine/bundle/darwin-iOS/armv7/lib/ioapi.o"; sourceTree = "<group>"; };
+		84929DB8178E9C430099E459 /* libBTstack.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libBTstack.a; path = "imagine/bundle/darwin-iOS/armv7/lib/libBTstack.a"; sourceTree = "<group>"; };
+		84929DB9178E9C430099E459 /* libfreetype.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libfreetype.a; path = "imagine/bundle/darwin-iOS/armv7/lib/libfreetype.a"; sourceTree = "<group>"; };
+		84929DBA178E9C430099E459 /* libpng15.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng15.a; path = "imagine/bundle/darwin-iOS/armv7/lib/libpng15.a"; sourceTree = "<group>"; };
+		84929DBB178E9C430099E459 /* unzip.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = unzip.o; path = "imagine/bundle/darwin-iOS/armv7/lib/unzip.o"; sourceTree = "<group>"; };
+		84929DBC178E9C430099E459 /* zip.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = zip.o; path = "imagine/bundle/darwin-iOS/armv7/lib/zip.o"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -450,12 +462,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				69E5586115061F5B001407C0 /* libz.dylib in Frameworks */,
-				69E5585515061EA6001407C0 /* libBTstack.a in Frameworks */,
-				69CFDF4915060C5C00F0C0AE /* ioapi.o in Frameworks */,
-				69CFDF4A15060C5C00F0C0AE /* libfreetype.a in Frameworks */,
-				69CFDF4B15060C5C00F0C0AE /* libpng15.a in Frameworks */,
-				69CFDF4C15060C5C00F0C0AE /* unzip.o in Frameworks */,
-				69CFDF4D15060C5C00F0C0AE /* zip.o in Frameworks */,
 				69CFDF391506099000F0C0AE /* UIKit.framework in Frameworks */,
 				69CFDF381506097E00F0C0AE /* MessageUI.framework in Frameworks */,
 				69CFDF361506096700F0C0AE /* QuartzCore.framework in Frameworks */,
@@ -463,6 +469,18 @@
 				69CFDF321506085100F0C0AE /* OpenGLES.framework in Frameworks */,
 				69CFDD5F1506039500F0C0AE /* Foundation.framework in Frameworks */,
 				69CFDD611506039500F0C0AE /* CoreGraphics.framework in Frameworks */,
+				84929DB0178E99DB0099E459 /* ioapi.o in Frameworks */,
+				84929DB1178E99DB0099E459 /* libBTstack.a in Frameworks */,
+				84929DB2178E99DB0099E459 /* libfreetype.a in Frameworks */,
+				84929DB3178E99DB0099E459 /* libpng15.a in Frameworks */,
+				84929DB4178E99DB0099E459 /* unzip.o in Frameworks */,
+				84929DB5178E99DB0099E459 /* zip.o in Frameworks */,
+				84929DBD178E9C430099E459 /* ioapi.o in Frameworks */,
+				84929DBE178E9C430099E459 /* libBTstack.a in Frameworks */,
+				84929DBF178E9C430099E459 /* libfreetype.a in Frameworks */,
+				84929DC0178E9C430099E459 /* libpng15.a in Frameworks */,
+				84929DC1178E9C430099E459 /* unzip.o in Frameworks */,
+				84929DC2178E9C430099E459 /* zip.o in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,13 +513,9 @@
 		69CFDD5B1506039500F0C0AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				69CFDF4415060C5C00F0C0AE /* ioapi.o */,
-				69E5585415061EA6001407C0 /* libBTstack.a */,
-				69CFDF4515060C5C00F0C0AE /* libfreetype.a */,
-				69CFDF4615060C5C00F0C0AE /* libpng15.a */,
 				69E5586015061F5B001407C0 /* libz.dylib */,
-				69CFDF4715060C5C00F0C0AE /* unzip.o */,
-				69CFDF4815060C5C00F0C0AE /* zip.o */,
+				84929DB6178E9C220099E459 /* armv7 */,
+				84929DA9178E99BD0099E459 /* armv7s */,
 				69CFDF33150608C800F0C0AE /* AudioToolbox.framework */,
 				69CFDD601506039500F0C0AE /* CoreGraphics.framework */,
 				69CFDD5E1506039500F0C0AE /* Foundation.framework */,
@@ -1422,6 +1436,32 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		84929DA9178E99BD0099E459 /* armv7s */ = {
+			isa = PBXGroup;
+			children = (
+				84929DAA178E99DB0099E459 /* ioapi.o */,
+				84929DAB178E99DB0099E459 /* libBTstack.a */,
+				84929DAC178E99DB0099E459 /* libfreetype.a */,
+				84929DAD178E99DB0099E459 /* libpng15.a */,
+				84929DAE178E99DB0099E459 /* unzip.o */,
+				84929DAF178E99DB0099E459 /* zip.o */,
+			);
+			name = armv7s;
+			sourceTree = "<group>";
+		};
+		84929DB6178E9C220099E459 /* armv7 */ = {
+			isa = PBXGroup;
+			children = (
+				84929DB7178E9C430099E459 /* ioapi.o */,
+				84929DB8178E9C430099E459 /* libBTstack.a */,
+				84929DB9178E9C430099E459 /* libfreetype.a */,
+				84929DBA178E9C430099E459 /* libpng15.a */,
+				84929DBB178E9C430099E459 /* unzip.o */,
+				84929DBC178E9C430099E459 /* zip.o */,
+			);
+			name = armv7;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1577,7 +1617,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -1617,7 +1657,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = armv7;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -1653,6 +1693,7 @@
 		69CFDD711506039500F0C0AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -1660,8 +1701,8 @@
 				INFOPLIST_FILE = "MD/MD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
 					"\"$(SRCROOT)/imagine/bundle/darwin-iOS/armv7/lib\"",
+					"\"$(SRCROOT)imagine/bundle/darwin-iOS/armv7s/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
@@ -1672,14 +1713,15 @@
 		69CFDD721506039500F0C0AE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_IDENTITY = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MD/MD-Prefix.pch";
 				INFOPLIST_FILE = "MD/MD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
 					"\"$(SRCROOT)/imagine/bundle/darwin-iOS/armv7/lib\"",
+					"\"$(SRCROOT)imagine/bundle/darwin-iOS/armv7s/lib\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
