@@ -44,19 +44,20 @@ void setVideoInterval(uint interval)
 
 /*void gfx_initFrameClockTime()
 {
-	/*#ifdef CONFIG_BASE_X11
+	#ifdef CONFIG_BASE_X11
 	if(useSGIVidSync)
-	{
+    {
 		glXGetVideoSyncSGI(&gfx_frameTime);
 		gfx_frameTimeRel = 1;
-	}
+    }
 	else
-	#endif*/
-	/*{
+	#endif
+	{
 		gfx_frameClockTime.setTimeNow();
 		//gfx_frameTimeRel = 1;
 	}
-}*/
+}
+ */
 
 void updateFrameTime()
 {
