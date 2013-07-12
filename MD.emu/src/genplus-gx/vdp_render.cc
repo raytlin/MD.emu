@@ -3776,7 +3776,7 @@ void remap_line(int line)
   line = (line + bitmap.viewport.y) % lines_per_frame;
 
   /* Adjust for interlaced output */
-  if (interlaced && config_render)
+  if (interlaced & config_render)
   {
     line = (line << 1) + odd_frame;
   }
