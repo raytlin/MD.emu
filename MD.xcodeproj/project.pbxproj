@@ -99,18 +99,13 @@
 		8465BE0C178D1E9B00EBD918 /* overlays64.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE0B178D1E9B00EBD918 /* overlays64.png */; };
 		8465BE14178D20CE00EBD918 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE13178D20CE00EBD918 /* icon.png */; };
 		8465BE16178D211700EBD918 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE15178D211700EBD918 /* icon@2x.png */; };
-		84929DB0178E99DB0099E459 /* ioapi.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAA178E99DB0099E459 /* ioapi.o */; settings = {ATTRIBUTES = (Required, ); }; };
-		84929DB1178E99DB0099E459 /* libBTstack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAB178E99DB0099E459 /* libBTstack.a */; settings = {ATTRIBUTES = (Required, ); }; };
-		84929DB2178E99DB0099E459 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAC178E99DB0099E459 /* libfreetype.a */; settings = {ATTRIBUTES = (Required, ); }; };
-		84929DB3178E99DB0099E459 /* libpng15.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAD178E99DB0099E459 /* libpng15.a */; settings = {ATTRIBUTES = (Required, ); }; };
-		84929DB4178E99DB0099E459 /* unzip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAE178E99DB0099E459 /* unzip.o */; settings = {ATTRIBUTES = (Required, ); }; };
-		84929DB5178E99DB0099E459 /* zip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DAF178E99DB0099E459 /* zip.o */; settings = {ATTRIBUTES = (Required, ); }; };
 		84929DBD178E9C430099E459 /* ioapi.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DB7178E9C430099E459 /* ioapi.o */; settings = {ATTRIBUTES = (Required, ); }; };
 		84929DBE178E9C430099E459 /* libBTstack.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DB8178E9C430099E459 /* libBTstack.a */; };
 		84929DBF178E9C430099E459 /* libfreetype.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DB9178E9C430099E459 /* libfreetype.a */; };
 		84929DC0178E9C430099E459 /* libpng15.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DBA178E9C430099E459 /* libpng15.a */; };
 		84929DC1178E9C430099E459 /* unzip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DBB178E9C430099E459 /* unzip.o */; };
 		84929DC2178E9C430099E459 /* zip.o in Frameworks */ = {isa = PBXBuildFile; fileRef = 84929DBC178E9C430099E459 /* zip.o */; };
+		84AE73D917903611000CD71E /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AE73D817903611000CD71E /* icon-72.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -454,6 +449,7 @@
 		84929DBA178E9C430099E459 /* libpng15.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpng15.a; path = "imagine/bundle/darwin-iOS/armv7/lib/libpng15.a"; sourceTree = "<group>"; };
 		84929DBB178E9C430099E459 /* unzip.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = unzip.o; path = "imagine/bundle/darwin-iOS/armv7/lib/unzip.o"; sourceTree = "<group>"; };
 		84929DBC178E9C430099E459 /* zip.o */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.objfile"; name = zip.o; path = "imagine/bundle/darwin-iOS/armv7/lib/zip.o"; sourceTree = "<group>"; };
+		84AE73D817903611000CD71E /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -469,12 +465,6 @@
 				69CFDF321506085100F0C0AE /* OpenGLES.framework in Frameworks */,
 				69CFDD5F1506039500F0C0AE /* Foundation.framework in Frameworks */,
 				69CFDD611506039500F0C0AE /* CoreGraphics.framework in Frameworks */,
-				84929DB0178E99DB0099E459 /* ioapi.o in Frameworks */,
-				84929DB1178E99DB0099E459 /* libBTstack.a in Frameworks */,
-				84929DB2178E99DB0099E459 /* libfreetype.a in Frameworks */,
-				84929DB3178E99DB0099E459 /* libpng15.a in Frameworks */,
-				84929DB4178E99DB0099E459 /* unzip.o in Frameworks */,
-				84929DB5178E99DB0099E459 /* zip.o in Frameworks */,
 				84929DBD178E9C430099E459 /* ioapi.o in Frameworks */,
 				84929DBE178E9C430099E459 /* libBTstack.a in Frameworks */,
 				84929DBF178E9C430099E459 /* libfreetype.a in Frameworks */,
@@ -490,6 +480,7 @@
 		69CFDD4D1506039500F0C0AE = {
 			isa = PBXGroup;
 			children = (
+				84AE73D817903611000CD71E /* icon-72.png */,
 				8465BE15178D211700EBD918 /* icon@2x.png */,
 				8465BE13178D20CE00EBD918 /* icon.png */,
 				8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */,
@@ -1522,6 +1513,7 @@
 				8465BE0C178D1E9B00EBD918 /* overlays64.png in Resources */,
 				8465BE14178D20CE00EBD918 /* icon.png in Resources */,
 				8465BE16178D211700EBD918 /* icon@2x.png in Resources */,
+				84AE73D917903611000CD71E /* icon-72.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1702,10 +1694,7 @@
 				GCC_PREFIX_HEADER = "MD/MD-Prefix.pch";
 				INFOPLIST_FILE = "MD/MD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/imagine/bundle/darwin-iOS/armv7/lib\"",
-					"\"$(SRCROOT)imagine/bundle/darwin-iOS/armv7s/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/imagine/bundle/darwin-iOS/armv7/lib\"";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
@@ -1722,10 +1711,7 @@
 				GCC_PREFIX_HEADER = "MD/MD-Prefix.pch";
 				INFOPLIST_FILE = "MD/MD-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				LIBRARY_SEARCH_PATHS = (
-					"\"$(SRCROOT)/imagine/bundle/darwin-iOS/armv7/lib\"",
-					"\"$(SRCROOT)imagine/bundle/darwin-iOS/armv7s/lib\"",
-				);
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/imagine/bundle/darwin-iOS/armv7/lib\"";
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VALID_ARCHS = armv7;
