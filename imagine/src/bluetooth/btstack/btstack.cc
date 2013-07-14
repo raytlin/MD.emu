@@ -637,7 +637,7 @@ namespace Bluetooth
 					{
 						rfcommInputDevList.remove(i);
 						callSafe(onInputDevChangeHandler, onInputDevChangeHandlerCtx, (InputDevChange){ i->devId, i->devType, Base::InputDevChange::REMOVED });
-						delete i;
+						i->close();
 					}
 				}
 				#endif
@@ -999,8 +999,7 @@ namespace Bluetooth
 						rfcommInputDevList.remove(dev);
 						dev->close(1);
 						callSafe(onInputDevChangeHandler, onInputDevChangeHandlerCtx, (InputDevChange){ dev->devId, dev->devType, Base::InputDevChange::REMOVED });
-						delete dev;
-					}
+						dev->close();					}
 
 					bcase L2CAP_EVENT_CHANNEL_CLOSED:
 					{
@@ -1037,14 +1036,14 @@ namespace Bluetooth
 			e->close();
 			e_it.removeElem();
 			callSafe(onInputDevChangeHandler, onInputDevChangeHandlerCtx, (InputDevChange){ e->devId, e->devType, Base::InputDevChange::REMOVED });
-			delete e;
+			e->close();
 		}
 		forEachInDLList(&rfcommInputDevList, e)
 		{
 			e->close();
 			e_it.removeElem();
 			callSafe(onInputDevChangeHandler, onInputDevChangeHandlerCtx, (InputDevChange){ e->devId, e->devType, Base::InputDevChange::REMOVED });
-			delete e;
+			e->close();
 		}
 		assert(BtStackWiimote::list.size == 0);
 		assert(BtStackIControlPad::list.size == 0);
