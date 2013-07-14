@@ -20,8 +20,7 @@
 
 @interface MainApp : NSObject <UIApplicationDelegate
 #ifdef IPHONE_VKEYBOARD
-//, UITextFieldDelegate
-, UITextViewDelegate
+, UITextFieldDelegate
 #endif
 #ifdef IPHONE_IMG_PICKER
 , UINavigationControllerDelegate, UIImagePickerControllerDelegate
