@@ -715,7 +715,7 @@ void ios_setVideoInterval(uint interval)
 
 void statusBarHidden(uint hidden)
 {
-	[[UIApplication sharedApplication] setStatusBarHidden: hidden ? YES : NO animated:YES];
+	[[UIApplication sharedApplication] setStatusBarHidden: hidden ? YES : NO];
 }
 
 void statusBarOrientation(uint o)
