@@ -22,10 +22,14 @@
 
 #include "shared.h"
 
-static unsigned char state[STATE_SIZE] __attribute__ ((aligned (4)));
+//static unsigned char state[STATE_SIZE] __attribute__ ((aligned (4)));
 
 int state_load(const unsigned char *buffer)
 {
+	unsigned char *state = (unsigned char*)malloc(STATE_SIZE);
+	if(!state)
+		return -1;
+
   /* buffer size */
   int bufferptr = 0;
 
@@ -35,7 +39,7 @@ int state_load(const unsigned char *buffer)
   outbytes = STATE_SIZE;
   if(uncompress((Bytef *)state, &outbytes, (Bytef *)(buffer + 4), inbytes) != Z_OK)
   {
-    //free(state);
+    free(state);
     return -1;
   }
 
@@ -45,13 +49,21 @@ int state_load(const unsigned char *buffer)
   version[16] = 0;
   if (strncmp(version,STATE_VERSION,11))
   {
+  	free(state);
     return -1;
   }
 
   /* version check (1.5.0 and above) */
   if ((version[11] < 0x31) || ((version[11] == 0x31) && (version[13] < 0x35)))
   {
+  	free(state);
     return -1;
+  }
+
+  uint exVersion = (version[15] >= 0x32) ? version[15] - 0x31 : 0;
+  if(exVersion)
+  {
+  	logMsg("state extra version: %d", exVersion);
   }
 
   /* reset system */
@@ -135,6 +147,10 @@ int state_load(const unsigned char *buffer)
     load_param(&tmp32, 4); m68k_set_reg(mm68k, M68K_REG_PC, tmp32);
     load_param(&tmp16, 2); m68k_set_reg(mm68k, M68K_REG_SR, tmp16);
     load_param(&tmp32, 4); m68k_set_reg(mm68k, M68K_REG_USP,tmp32);
+    if(exVersion >= 1)
+    {
+    	load_param(&tmp32, 4); m68k_set_reg(mm68k, M68K_REG_ISP,tmp32);
+    }
   }
 
   // Z80 
@@ -153,11 +169,23 @@ int state_load(const unsigned char *buffer)
     bufferptr += md_cart_context_load(&state[bufferptr]);
   }
 
+	#ifndef NO_SCD
+	if (sCD.isActive)
+	{
+		bufferptr += scd_loadState(&state[bufferptr], exVersion);
+	}
+	#endif
+
+	free(state);
   return 1;
 }
 
 int state_save(unsigned char *buffer)
 {
+	unsigned char *state = (unsigned char*)malloc(STATE_SIZE);
+	if(!state)
+		return -1;
+
   /* buffer size */
   int bufferptr = 0;
 
@@ -227,6 +255,7 @@ int state_save(unsigned char *buffer)
     tmp32 = m68k_get_reg(mm68k, M68K_REG_PC);  save_param(&tmp32, 4);
     tmp16 = m68k_get_reg(mm68k, M68K_REG_SR);  save_param(&tmp16, 2);
     tmp32 = m68k_get_reg(mm68k, M68K_REG_USP); save_param(&tmp32, 4);
+    tmp32 = m68k_get_reg(mm68k, M68K_REG_ISP); save_param(&tmp32, 4);
   }
 
   // Z80 
@@ -244,10 +273,20 @@ int state_save(unsigned char *buffer)
     bufferptr += md_cart_context_save(&state[bufferptr]);
   }
 
+	#ifndef NO_SCD
+	if (sCD.isActive)
+	{
+		bufferptr += scd_saveState(&state[bufferptr]);
+	}
+	#endif
+
   /* compress state file */
   unsigned long inbytes   = bufferptr;
   unsigned long outbytes  = STATE_SIZE;
+  logMsg("compressing %d bytes to buffer of %d size", (int)inbytes, (int)outbytes);
   int ret = compress2 ((Bytef *)(buffer + 4), &outbytes, (Bytef *)state, inbytes, 9);
+  logMsg("compress2 returned %d", ret);
+  free(state);
   memcpy(buffer, &outbytes, 4);
 
   /* return total size */
