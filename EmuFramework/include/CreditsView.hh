@@ -18,7 +18,7 @@
 #include <gui/View.hh>
 #include <util/gui/ViewAnimation.hh>
 #include <config/version.h>
-#include <meta.h>
+#include <config.h>
 
 #ifdef NDEBUG
 	#define OTHER_SUFFIX_STR

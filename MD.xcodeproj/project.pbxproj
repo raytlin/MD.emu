@@ -305,7 +305,6 @@
 		69CFDEBD150604AC00F0C0AE /* Vector3d.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector3d.hh; sourceTree = "<group>"; };
 		69CFDEBE150604AC00F0C0AE /* Vector4d.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Vector4d.hh; sourceTree = "<group>"; };
 		69CFDF2F1506064200F0C0AE /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = gen/config.h; sourceTree = "<group>"; };
-		69CFDF301506064200F0C0AE /* meta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = meta.h; path = gen/meta.h; sourceTree = "<group>"; };
 		69CFDF311506085100F0C0AE /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		69CFDF33150608C800F0C0AE /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		69CFDF351506096600F0C0AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -1189,7 +1188,6 @@
 			isa = PBXGroup;
 			children = (
 				69CFDF2F1506064200F0C0AE /* config.h */,
-				69CFDF301506064200F0C0AE /* meta.h */,
 			);
 			name = gen;
 			sourceTree = "<group>";

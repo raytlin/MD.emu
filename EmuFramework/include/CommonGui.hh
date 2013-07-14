@@ -24,7 +24,7 @@
 #include "EmuOptions.hh"
 #include "KeyMapping.hh"
 
-#include <meta.h>
+#include <config.h>
 
 bool isMenuDismissKey(const InputEvent &e);
 void startGameFromMenu();

@@ -17,7 +17,7 @@
 
 #include <util/gui/BaseMenuView.hh>
 #include "EmuSystem.hh"
-#include <meta.h>
+#include <config.h>
 
 static void onInputEvent(void *, const InputEvent &e);
 void startGameFromMenu();
