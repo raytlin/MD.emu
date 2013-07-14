@@ -650,7 +650,7 @@ CallResult main_init()
 	bitmap.pitch = mdResX * pixFmt->bytesPerPixel;
 	bitmap.data = (uint8*)nativePixBuff;
 
-	credits.str = CREDITS_INFO_STRING "(c) 2011\nRobert Broglia\nwww.explusalpha.com\n\nPortions (c) the\nGenesis Plus Team\ncgfm2.emuviews.com";
+	credits.str = CREDITS_INFO_STRING "(c) 2011-2013\nRobert Broglia\nwww.explusalpha.com\n\nPortions (c) the\nGenesis Plus Team\ncgfm2.emuviews.com";
 	mMenu.init(Config::envIsPS3);
 	viewStack.push(&mMenu);
 	onViewChange();
