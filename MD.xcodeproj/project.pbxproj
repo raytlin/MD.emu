@@ -89,7 +89,6 @@
 		69E5585215061D6D001407C0 /* Screenshot.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69E5584915061D6D001407C0 /* Screenshot.cc */; };
 		69E5585315061D6D001407C0 /* VController.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69E5584A15061D6D001407C0 /* VController.cc */; };
 		69E5585D15061F32001407C0 /* btstack.cc in Sources */ = {isa = PBXBuildFile; fileRef = 69E5585B15061F32001407C0 /* btstack.cc */; settings = {COMPILER_FLAGS = "-DIMAGINE_SRC"; }; };
-		69E5585E15061F32001407C0 /* build.mk in Resources */ = {isa = PBXBuildFile; fileRef = 69E5585C15061F32001407C0 /* build.mk */; };
 		69E5586115061F5B001407C0 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 69E5586015061F5B001407C0 /* libz.dylib */; };
 		69E558A4150645E5001407C0 /* padButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A2150645E5001407C0 /* padButton.png */; };
 		69E558A5150645E5001407C0 /* xButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A3150645E5001407C0 /* xButton.png */; };
@@ -1474,7 +1473,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69E5585E15061F32001407C0 /* build.mk in Resources */,
 				69E558A4150645E5001407C0 /* padButton.png in Resources */,
 				69E558A5150645E5001407C0 /* xButton.png in Resources */,
 				69E558A715064624001407C0 /* Vera.ttf in Resources */,
@@ -1633,7 +1631,7 @@
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = s;
-				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
