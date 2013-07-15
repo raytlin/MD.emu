@@ -285,7 +285,7 @@ CallResult Png::readImage (Io * stream, void* buffer, uint pitch, const PixelFor
 	
 	int height = getHeight();
 	int width = getWidth();
-	//int rowbytes = png_get_rowbytes(png, info);
+	//fint rowbytes = png_get_rowbytes(png, info);
 	//log_mPrintf(LOG_MSG,"width = %d, height = %d, rowbytes = %d", width, height, rowbytes);
 
 	png_infop transInfo = png_create_info_struct(png);
