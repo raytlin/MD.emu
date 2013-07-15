@@ -3396,7 +3396,7 @@ void Z80CPU::staticInit()
 
 void Z80CPU::init(/*const void *config, int (*irqcallback)(int)*/)
 {
-	int i, p;
+	//int i, p;
 
 	staticInit();
 
