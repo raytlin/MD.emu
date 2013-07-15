@@ -27,11 +27,7 @@
 #endif
 
 #ifdef CONFIG_BASE_IOS
-	#ifdef __ARM_ARCH_6K__
-		#define ARCH_STR "armv6"
-	#else
-		#define ARCH_STR "armv7"
-	#endif
+  #define ARCH_STR "armv7_armv7s"
 #elif defined(CONFIG_ENV_WEBOS)
 	#ifdef __ARM_ARCH_6J__
 		#define ARCH_STR "armv6"
@@ -53,9 +49,9 @@
 #endif
 
 #ifdef ENV_NOTE
-	#define PLATFORM_INFO_STR ENV_NOTE " (" ARCH_STR ")"
+	#define PLATFORM_INFO_STR ENV_NOTE "ios " ARCH_STR
 #else
-	#define PLATFORM_INFO_STR "(" ARCH_STR ")"
+	#define PLATFORM_INFO_STR "ios " ARCH_STR
 #endif
 #define CREDITS_INFO_STRING "Built : " __DATE__ "\n" PLATFORM_INFO_STR "\n\n"
 
