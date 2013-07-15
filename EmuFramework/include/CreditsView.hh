@@ -27,31 +27,31 @@
 #endif
 
 #ifdef CONFIG_BASE_IOS
-  #define ARCH_STR "armv7_armv7s"
+  #define ARCH_STR "Ios armv7_armv7s"
 #elif defined(CONFIG_ENV_WEBOS)
 	#ifdef __ARM_ARCH_6J__
-		#define ARCH_STR "armv6"
+		#define ARCH_STR "WebOS armv6"
 	#else
-		#define ARCH_STR "armv7"
+		#define ARCH_STR "WebOS armv7"
 	#endif
 #elif defined(CONFIG_BASE_ANDROID)
 	#ifdef __ARM_ARCH_7A__
 		#ifdef __ARM_NEON__
-			#define ARCH_STR "armv7-neon"
+			#define ARCH_STR " Android armv7-neon"
 		#else
-			#define ARCH_STR "armv7"
+			#define ARCH_STR "Android armv7"
 		#endif
 	#else
-		#define ARCH_STR "armv6"
+		#define ARCH_STR "Android armv6"
 	#endif
 #else
 	#define ARCH_STR
 #endif
 
 #ifdef ENV_NOTE
-	#define PLATFORM_INFO_STR ENV_NOTE "ios " ARCH_STR
+	#define PLATFORM_INFO_STR ENV_NOTE ARCH_STR
 #else
-	#define PLATFORM_INFO_STR "ios " ARCH_STR
+	#define PLATFORM_INFO_STR ARCH_STR
 #endif
 #define CREDITS_INFO_STRING "Built : " __DATE__ "\n" PLATFORM_INFO_STR "\n\n"
 
