@@ -13,7 +13,7 @@ the [Imagine][5] engine. The source is released under the [GPLv3][2] license.
 
 ### Usage ###
 
-1. Install the app using the Button bellow or you can clone this project and deploy via Xcode.
+1. Install the app using the button bellow or you can clone this project and deploy via Xcode.
 2. Deploy ROMs using iTunes file sharing.
 3. When using iCade / iControlPad, you need to activate that in the
 settings of the app.
