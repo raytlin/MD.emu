@@ -547,7 +547,7 @@ static void doAudioInit()
 	#if defined(CONFIG_ENV_WEBOS)
 	if(optionFrameSkip != EmuSystem::optionFrameSkipAuto)
 	{
-		if(!vdp_pal) fps = 62;
+		if(!vdp_pal) fps = 60;
 	}
 	#endif
 	audio_init(optionSoundRate, fps);
