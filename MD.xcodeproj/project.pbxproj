@@ -95,7 +95,6 @@
 		69E558A715064624001407C0 /* Vera.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A615064624001407C0 /* Vera.ttf */; };
 		69E558AB1506468D001407C0 /* overlays128.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A91506468D001407C0 /* overlays128.png */; };
 		8465BE0A178D0DCC00EBD918 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */; };
-		8465BE0C178D1E9B00EBD918 /* overlays64.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE0B178D1E9B00EBD918 /* overlays64.png */; };
 		8465BE14178D20CE00EBD918 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE13178D20CE00EBD918 /* icon.png */; };
 		8465BE16178D211700EBD918 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE15178D211700EBD918 /* icon@2x.png */; };
 		84AE73D917903611000CD71E /* icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 84AE73D817903611000CD71E /* icon-72.png */; };
@@ -432,7 +431,6 @@
 		69E558A615064624001407C0 /* Vera.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vera.ttf; sourceTree = "<group>"; };
 		69E558A91506468D001407C0 /* overlays128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlays128.png; path = "EmuFramework/res/overlays/NES-style/overlays128.png"; sourceTree = "<group>"; };
 		8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		8465BE0B178D1E9B00EBD918 /* overlays64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlays64.png; path = MD.emu/res/overlays/overlays64.png; sourceTree = "<group>"; };
 		8465BE13178D20CE00EBD918 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8465BE15178D211700EBD918 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
 		84AE73D817903611000CD71E /* icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-72.png"; sourceTree = "<group>"; };
@@ -1417,7 +1415,6 @@
 				69E558A2150645E5001407C0 /* padButton.png */,
 				69E558A615064624001407C0 /* Vera.ttf */,
 				69E558A3150645E5001407C0 /* xButton.png */,
-				8465BE0B178D1E9B00EBD918 /* overlays64.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1478,7 +1475,6 @@
 				69E558A715064624001407C0 /* Vera.ttf in Resources */,
 				69E558AB1506468D001407C0 /* overlays128.png in Resources */,
 				8465BE0A178D0DCC00EBD918 /* Default-568h@2x.png in Resources */,
-				8465BE0C178D1E9B00EBD918 /* overlays64.png in Resources */,
 				8465BE14178D20CE00EBD918 /* icon.png in Resources */,
 				8465BE16178D211700EBD918 /* icon@2x.png in Resources */,
 				84AE73D917903611000CD71E /* icon-72.png in Resources */,
