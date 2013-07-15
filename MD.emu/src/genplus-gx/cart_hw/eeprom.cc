@@ -268,7 +268,7 @@ void eeprom_write(unsigned int address, unsigned int data, int word_access)
           {
             /* two ADDRESS bytes */
             eeprom.state = eeprom.rw ? READ_DATA : GET_WORD_ADR_HIGH;
-            eeprom.slave_mask <<= 16;
+            eeprom.slave_mask = 16;
           }
           else
           {
