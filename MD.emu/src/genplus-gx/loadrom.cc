@@ -441,9 +441,7 @@ int load_rom(char *filename)
   if(size == 0x20000 && (!strncmp((char *)cart.rom+0x124, "BOOT", 4) || !strncmp((char *)cart.rom+0x128, "BOOT", 4)))
   {
 	  logMsg("detected SCD BIOS");
-	  usingSCD = 1;
-	  cart.rom[0x72] = 0xFF;
-	  cart.rom[0x73] = 0xFF;
+	  sCD.isActive = 1;
   }
   #endif
 
