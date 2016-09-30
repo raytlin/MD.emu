@@ -593,7 +593,9 @@ static uint iOSOrientationToGfx(UIDeviceOrientation orientation)
     [control release];*/
     
     glView.multipleTouchEnabled = YES;
-	[window addSubview:glView];
+    UIViewController *rootViewController = [[UIViewController alloc] init];
+    rootViewController.view = glView;
+	[window setRootViewController:rootViewController];
 	[glView release];
 	
 	[[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(orientationChanged:) name:UIDeviceOrientationDidChangeNotification object:nil];
