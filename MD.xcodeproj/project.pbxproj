@@ -94,6 +94,8 @@
 		69E558A5150645E5001407C0 /* xButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A3150645E5001407C0 /* xButton.png */; };
 		69E558A715064624001407C0 /* Vera.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A615064624001407C0 /* Vera.ttf */; };
 		69E558AB1506468D001407C0 /* overlays128.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A91506468D001407C0 /* overlays128.png */; };
+		71CA8E9B1DA1DD6E00A4CC6A /* AtariDuoGamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CA8E9A1DA1DD6E00A4CC6A /* AtariDuoGamePad.m */; };
+		71CA8E9D1DA1E41C00A4CC6A /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CA8E9C1DA1E41C00A4CC6A /* ExternalAccessory.framework */; };
 		8465BE0A178D0DCC00EBD918 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */; };
 		8465BE14178D20CE00EBD918 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE13178D20CE00EBD918 /* icon.png */; };
 		8465BE16178D211700EBD918 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE15178D211700EBD918 /* icon@2x.png */; };
@@ -431,6 +433,9 @@
 		69E558A3150645E5001407C0 /* xButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xButton.png; path = EmuFramework/res/ui/xButton.png; sourceTree = "<group>"; };
 		69E558A615064624001407C0 /* Vera.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vera.ttf; sourceTree = "<group>"; };
 		69E558A91506468D001407C0 /* overlays128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlays128.png; path = "EmuFramework/res/overlays/NES-style/overlays128.png"; sourceTree = "<group>"; };
+		71CA8E991DA1DD6E00A4CC6A /* AtariDuoGamePad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtariDuoGamePad.h; path = ../../../../../../iMameAtariArcadeDuo/Classes/AtariDuoGamePad.h; sourceTree = "<group>"; };
+		71CA8E9A1DA1DD6E00A4CC6A /* AtariDuoGamePad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AtariDuoGamePad.m; path = ../../../../../../iMameAtariArcadeDuo/Classes/AtariDuoGamePad.m; sourceTree = "<group>"; };
+		71CA8E9C1DA1E41C00A4CC6A /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8465BE13178D20CE00EBD918 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		8465BE15178D211700EBD918 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
@@ -449,6 +454,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71CA8E9D1DA1E41C00A4CC6A /* ExternalAccessory.framework in Frameworks */,
 				69E5586115061F5B001407C0 /* libz.dylib in Frameworks */,
 				69CFDF391506099000F0C0AE /* UIKit.framework in Frameworks */,
 				69CFDF381506097E00F0C0AE /* MessageUI.framework in Frameworks */,
@@ -497,6 +503,7 @@
 		69CFDD5B1506039500F0C0AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71CA8E9C1DA1E41C00A4CC6A /* ExternalAccessory.framework */,
 				84E2462317919DB10019F113 /* ioapi.a */,
 				84E2462417919DB10019F113 /* libBTstack.a */,
 				84E2462517919DB10019F113 /* libfreetype.a */,
@@ -612,6 +619,8 @@
 				69CFDDBA150604AC00F0C0AE /* build.mk */,
 				69CFDDBB150604AC00F0C0AE /* EAGLView.h */,
 				69CFDDBC150604AC00F0C0AE /* ICadeHelper.hh */,
+				71CA8E991DA1DD6E00A4CC6A /* AtariDuoGamePad.h */,
+				71CA8E9A1DA1DD6E00A4CC6A /* AtariDuoGamePad.m */,
 				69CFDDBE150604AC00F0C0AE /* inputDefs.hh */,
 				69CFDDBF150604AC00F0C0AE /* iOS.hh */,
 				69CFDDC0150604AC00F0C0AE /* iphone.mm */,
@@ -1518,6 +1527,7 @@
 				69CFDF0C150604AD00F0C0AE /* IoFd.cc in Sources */,
 				69CFDF0D150604AD00F0C0AE /* Io.cc in Sources */,
 				69CFDF10150604AD00F0C0AE /* IoMmapFd.cc in Sources */,
+				71CA8E9B1DA1DD6E00A4CC6A /* AtariDuoGamePad.m in Sources */,
 				69CFDF12150604AD00F0C0AE /* IoMmapGeneric.cc in Sources */,
 				69CFDF13150604AD00F0C0AE /* IoMmap.cc in Sources */,
 				69CFDF1D150604AD00F0C0AE /* Pixmap.cc in Sources */,

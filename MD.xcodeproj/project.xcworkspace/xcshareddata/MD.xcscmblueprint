@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "BF9FD804DA14CE349D9397771353DD9EA641387D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A5C1FB1DE726D0F2063ECCE27D8D50FF2E3DCD08" : 9223372036854775807,
+    "BF9FD804DA14CE349D9397771353DD9EA641387D" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CA66C713-F63B-443B-A272-7C7F70F8A02A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A5C1FB1DE726D0F2063ECCE27D8D50FF2E3DCD08" : "..\/iMameAtariArcadeDuo",
+    "BF9FD804DA14CE349D9397771353DD9EA641387D" : "MD.emu\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MD",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MD.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/raytlin\/iMameAtariArcadeDuo",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A5C1FB1DE726D0F2063ECCE27D8D50FF2E3DCD08"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/vladborovtsov\/MD.emu.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BF9FD804DA14CE349D9397771353DD9EA641387D"
+    }
+  ]
+}

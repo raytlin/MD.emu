@@ -13,6 +13,8 @@
 #import <OpenGLES/EAGLDrawable.h>
 #import <Foundation/NSPathUtilities.h>
 
+#import "AtariDuoGamePad.h"
+
 #ifdef CONFIG_INPUT
 	#include "input.h"
 #endif
@@ -156,6 +158,9 @@ uint appState = APP_RUNNING;
 - (BOOL) createFramebuffer;
 - (void) destroyFramebuffer;
 
+@property (nonatomic, strong) AtariDuoGamePad *atariDuoPad;
+@property (nonatomic, assign) uint8_t duoPreviousState;
+
 @end
 
 @implementation EAGLView
@@ -218,6 +223,8 @@ uint appState = APP_RUNNING;
 	if((self = [super initWithFrame:frame]))
 	{
 		self = [self initGLES];
+        _atariDuoPad = [[AtariDuoGamePad alloc] init];
+        [self configureAtariGamepadHandler];
 	}
 	logMsg("exiting initWithFrame");
 	return self;
@@ -414,13 +421,96 @@ uint appState = APP_RUNNING;
 {
 	return Base::iCade.dummyInputView;
 }
+
+#pragma mark - AtariGamePad
+- (void)configureAtariGamepadHandler {
+    self.atariDuoPad.handler = ^(uint8_t state) {
+        if(!Base::iCade.isActive()) {
+            return;
+        } else if (state == self.duoPreviousState) {
+            // If the state is the same, let the current state run
+            return;
+        } else if (!self.duoPreviousState) {
+            // this is the first time running. just do whatever the state is
+            [self executeState:state];
+            self.duoPreviousState = state;
+        } else { // Every 1->0 needs to be undone and every 0->1 needs to execute
+            // If the state is different, we need to send the "up" state to everything that went from 1 to 0.
+            uint8_t stateToUndo = self.duoPreviousState & (~state);
+            [self undoState:stateToUndo];
+            
+            // Execute new buttons that have become active
+            uint8_t stateToExecute = ~self.duoPreviousState & state;
+            [self executeState:stateToExecute];
+            
+            // Now the current state becomes the last state
+            self.duoPreviousState = state;
+        }
+    };
+}
+
+- (void)executeState:(uint8_t)state
+{
+    if (state & ATARI_BUTT_Y) {
+        [self insertText:@"i"];
+    }
+    if (state & ATARI_BUTT_X) {
+        [self insertText:@"k"];
+    }
+    if (state & ATARI_BUTT_B) {
+        [self insertText:@"o"];
+    }
+    if (state & ATARI_BUTT_A) {
+        [self insertText:@"l"];
+    }
+    if (state & ATARI_RIGHT) {
+        [self insertText:@"d"];
+    }
+    if (state & ATARI_LEFT) {
+        [self insertText:@"a"];
+    }
+    if (state & ATARI_DOWN) {
+        [self insertText:@"x"];
+    }
+    if (state & ATARI_UP) {
+        [self insertText:@"w"];
+    }
+}
+
+- (void)undoState:(uint8_t)state
+{
+    if (state & ATARI_BUTT_Y) {
+        [self insertText:@"m"];
+    }
+    if (state & ATARI_BUTT_X) {
+        [self insertText:@"p"];
+    }
+    if (state & ATARI_BUTT_B) {
+        [self insertText:@"g"];
+    }
+    if (state & ATARI_BUTT_A) {
+        [self insertText:@"v"];
+    }
+    if (state & ATARI_RIGHT) {
+        [self insertText:@"c"];
+    }
+    if (state & ATARI_LEFT) {
+        [self insertText:@"q"];
+    }
+    if (state & ATARI_DOWN) {
+        [self insertText:@"z"];
+    }
+    if (state & ATARI_UP) {
+        [self insertText:@"e"];
+    }
+}
+
 #endif
 #endif // defined(CONFIG_BASE_IOS_KEY_INPUT) || defined(CONFIG_BASE_IOS_ICADE)
 
 #endif
 
 @end
-
 
 @implementation MainApp
 
