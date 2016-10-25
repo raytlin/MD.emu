@@ -94,6 +94,7 @@
 		69E558A5150645E5001407C0 /* xButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A3150645E5001407C0 /* xButton.png */; };
 		69E558A715064624001407C0 /* Vera.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A615064624001407C0 /* Vera.ttf */; };
 		69E558AB1506468D001407C0 /* overlays128.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A91506468D001407C0 /* overlays128.png */; };
+		6E1980D71DC00CBF001923F4 /* AtariDuoGamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1980D61DC00CBF001923F4 /* AtariDuoGamePad.m */; };
 		71CA8E9B1DA1DD6E00A4CC6A /* AtariDuoGamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CA8E9A1DA1DD6E00A4CC6A /* AtariDuoGamePad.m */; };
 		71CA8E9D1DA1E41C00A4CC6A /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CA8E9C1DA1E41C00A4CC6A /* ExternalAccessory.framework */; };
 		8465BE0A178D0DCC00EBD918 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */; };
@@ -433,8 +434,8 @@
 		69E558A3150645E5001407C0 /* xButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = xButton.png; path = EmuFramework/res/ui/xButton.png; sourceTree = "<group>"; };
 		69E558A615064624001407C0 /* Vera.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Vera.ttf; sourceTree = "<group>"; };
 		69E558A91506468D001407C0 /* overlays128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = overlays128.png; path = "EmuFramework/res/overlays/NES-style/overlays128.png"; sourceTree = "<group>"; };
-		71CA8E991DA1DD6E00A4CC6A /* AtariDuoGamePad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AtariDuoGamePad.h; path = ../../../../../../iMameAtariArcadeDuo/Classes/AtariDuoGamePad.h; sourceTree = "<group>"; };
-		71CA8E9A1DA1DD6E00A4CC6A /* AtariDuoGamePad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AtariDuoGamePad.m; path = ../../../../../../iMameAtariArcadeDuo/Classes/AtariDuoGamePad.m; sourceTree = "<group>"; };
+		6E1980D51DC00CBF001923F4 /* AtariDuoGamePad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AtariDuoGamePad.h; sourceTree = "<group>"; };
+		6E1980D61DC00CBF001923F4 /* AtariDuoGamePad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AtariDuoGamePad.m; sourceTree = "<group>"; };
 		71CA8E9C1DA1E41C00A4CC6A /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
 		8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		8465BE13178D20CE00EBD918 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
@@ -541,6 +542,8 @@
 				69CFDF2D1506061A00F0C0AE /* gen */,
 				69CFDD641506039500F0C0AE /* MD-Info.plist */,
 				69CFDD6A1506039500F0C0AE /* MD-Prefix.pch */,
+				6E1980D51DC00CBF001923F4 /* AtariDuoGamePad.h */,
+				6E1980D61DC00CBF001923F4 /* AtariDuoGamePad.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -619,8 +622,6 @@
 				69CFDDBA150604AC00F0C0AE /* build.mk */,
 				69CFDDBB150604AC00F0C0AE /* EAGLView.h */,
 				69CFDDBC150604AC00F0C0AE /* ICadeHelper.hh */,
-				71CA8E991DA1DD6E00A4CC6A /* AtariDuoGamePad.h */,
-				71CA8E9A1DA1DD6E00A4CC6A /* AtariDuoGamePad.m */,
 				69CFDDBE150604AC00F0C0AE /* inputDefs.hh */,
 				69CFDDBF150604AC00F0C0AE /* iOS.hh */,
 				69CFDDC0150604AC00F0C0AE /* iphone.mm */,
@@ -1555,6 +1556,7 @@
 				69CFDFD815060F8300F0C0AE /* xe_a1p.cc in Sources */,
 				69CFDFD915060F8300F0C0AE /* io_ctrl.cc in Sources */,
 				69CFDFDA15060F8300F0C0AE /* loadrom.cc in Sources */,
+				6E1980D71DC00CBF001923F4 /* AtariDuoGamePad.m in Sources */,
 				69CFDFDB15060F8300F0C0AE /* m68kcpu.cc in Sources */,
 				69CFDFDE15060F8300F0C0AE /* mem68k.cc in Sources */,
 				69CFDFDF15060F8300F0C0AE /* membnk.cc in Sources */,
