@@ -95,7 +95,7 @@
 		69E558A715064624001407C0 /* Vera.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A615064624001407C0 /* Vera.ttf */; };
 		69E558AB1506468D001407C0 /* overlays128.png in Resources */ = {isa = PBXBuildFile; fileRef = 69E558A91506468D001407C0 /* overlays128.png */; };
 		6E1980D71DC00CBF001923F4 /* AtariDuoGamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1980D61DC00CBF001923F4 /* AtariDuoGamePad.m */; };
-		71CA8E9B1DA1DD6E00A4CC6A /* AtariDuoGamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CA8E9A1DA1DD6E00A4CC6A /* AtariDuoGamePad.m */; };
+		71CA8E9B1DA1DD6E00A4CC6A /* (null) in Sources */ = {isa = PBXBuildFile; };
 		71CA8E9D1DA1E41C00A4CC6A /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CA8E9C1DA1E41C00A4CC6A /* ExternalAccessory.framework */; };
 		8465BE0A178D0DCC00EBD918 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE09178D0DCC00EBD918 /* Default-568h@2x.png */; };
 		8465BE14178D20CE00EBD918 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8465BE13178D20CE00EBD918 /* icon.png */; };
@@ -264,7 +264,7 @@
 		69CFDE8B150604AC00F0C0AE /* basicString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = basicString.h; sourceTree = "<group>"; };
 		69CFDE8C150604AC00F0C0AE /* bits.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bits.h; sourceTree = "<group>"; };
 		69CFDE8D150604AC00F0C0AE /* branch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = branch.h; sourceTree = "<group>"; };
-		69CFDE8E150604AC00F0C0AE /* builtins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = builtins.h; sourceTree = "<group>"; };
+		69CFDE8E150604AC00F0C0AE /* builtins.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = builtins.h; sourceTree = "<group>"; };
 		69CFDE8F150604AC00F0C0AE /* cLang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cLang.h; sourceTree = "<group>"; };
 		69CFDE90150604AC00F0C0AE /* ClassRefCount.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ClassRefCount.hh; sourceTree = "<group>"; };
 		69CFDE92150604AC00F0C0AE /* DLList.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = DLList.hh; sourceTree = "<group>"; };
@@ -1528,7 +1528,7 @@
 				69CFDF0C150604AD00F0C0AE /* IoFd.cc in Sources */,
 				69CFDF0D150604AD00F0C0AE /* Io.cc in Sources */,
 				69CFDF10150604AD00F0C0AE /* IoMmapFd.cc in Sources */,
-				71CA8E9B1DA1DD6E00A4CC6A /* AtariDuoGamePad.m in Sources */,
+				71CA8E9B1DA1DD6E00A4CC6A /* (null) in Sources */,
 				69CFDF12150604AD00F0C0AE /* IoMmapGeneric.cc in Sources */,
 				69CFDF13150604AD00F0C0AE /* IoMmap.cc in Sources */,
 				69CFDF1D150604AD00F0C0AE /* Pixmap.cc in Sources */,

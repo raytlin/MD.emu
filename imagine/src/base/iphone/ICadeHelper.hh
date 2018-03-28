@@ -55,7 +55,7 @@ struct ICadeHelper
 		using namespace Input;
 		logMsg("got text %s", [text cStringUsingEncoding: NSUTF8StringEncoding]);
 		char c = [text characterAtIndex:0];
-		char *p = strchr(ON_STATES, c);
+		const char *p = strchr(ON_STATES, c);
 
 		if(p)
 		{
